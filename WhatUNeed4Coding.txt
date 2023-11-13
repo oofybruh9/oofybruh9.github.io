@@ -1,0 +1,23 @@
+Coding Essentials
+
+Compilers:
+C/C++
+https://github.com/niXman/mingw-builds-binaries/releases
+Java
+https://www.java.com/en/download/manual.jsp
+C#
+https://unity.com/es/download
+/
+Porting
+devkitPro(GBA, Wii, Gamecube, etc.)
+https://github.com/devkitPro/installer/releases
+/
+Cheat sheets
+PyGame
+https://canberragpn.github.io/static/doc/PygameCheatSheet.pdf
+Raylib(official)
+https://www.raylib.com/cheatsheet/cheatsheet.html
+/
+Libraries for C++
+Raylib 
+https://raysan5.itch.io/
