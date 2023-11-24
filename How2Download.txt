@@ -1,5 +1,6 @@
 Download. extract, install, and play.
 Open:
-Windows: Cat Clicker.exe Note: Windows will say that there is a virus in the file. THERE ISN'T. Microsoft Defender never listed that there was a virus.
-Linux: Cat Clicker. Don't open Start.sh It doesn't work (at least that's what I think [Tested on Debian])
-Android: Install the .apk file and everything will turn out just fine.
+Windows: <game>.exe Note: Windows will say that there is a virus in the file. THERE ISN'T. Microsoft Defender never listed that there was a virus.
+Linux: <game>. Don't open Start.sh It doesn't work (at least that's what I think [Tested on Debian])
+Android: Install the <game>.apk file and everything will turn out just fine.
+Replace <game> for the game title like color cat, Cat Clicker, etc.
