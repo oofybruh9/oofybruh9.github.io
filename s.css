@@ -1,0 +1,142 @@
+/* fonts used:
+Comfortaa
+Nunito
+Montserrat
+Doto
+Sixtyfour Convergence
+Roboto
+Roboto Mono
+https://fonts.google.com/share?selection.family=Comfortaa:wght@300..700|Doto:wght,ROND@100..900,0..100|Montserrat:ital,wght@0,100..900;1,100..900|Nunito:ital,wght@0,200..1000;1,200..1000|Roboto+Mono:ital,wght@0,100..700;1,100..700|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900|Sixtyfour+Convergence:BLED,SCAN,XELA,YELA@0..100,-53..100,-100..100,-100..100
+
+Material Icons:
+
+fill = 1
+GRAD = 200
+OPSZ = 20px
+weight = 700
+
+*/
+
+
+html{
+  background-image: url("./res/bg.jpeg");
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+}
+
+#dabutton{
+  background:    #90c6f4;
+  background:    linear-gradient(#90c6f4, #bce9fa);
+  border:        3px solid #6aa84f;
+  border-radius: 1000px;
+  box-shadow:    3px 3px #444444;
+  padding:       20px 45px;
+  color:         #ffffff;
+  display:       inline-block;
+  font:          normal bold 26px/1 "Roboto", sans-serif;
+  text-align:    center;
+  text-shadow:   1px 1px #000000;
+}
+
+body{
+    text-align: center;
+}
+
+h1{
+    font-family: "Sixtyfour Convergence", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "BLED" 0, "SCAN" 0, "XELA" 0, "YELA" 0;
+}
+
+a{
+    font-family: "Doto";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "ROND" 0;
+}
+
+h2 {
+    font-family:"Montserrat";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-family: "Roboto";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+code{
+    font-family: "Roboto Mono";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer{
+    font-family: "Comfortaa";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+
+  
