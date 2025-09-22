@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "hello world"
+---
+
 # hello world
 idk what to put here  
 ## test for baller
