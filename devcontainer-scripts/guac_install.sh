@@ -1,4 +1,5 @@
 #! /bin/sh
+set -e
 echo "http://dl-cdn.alpinelinux.org/alpine/v3.22/community" >> /etc/apk/repositories
 apk update
 apk add --no-cache guacamole-server guacamole-server-vnc guacamole-server-ssh guacamole-server-libs guacamole-server-encoder tomcat9
