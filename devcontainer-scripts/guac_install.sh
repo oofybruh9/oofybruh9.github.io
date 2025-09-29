@@ -11,6 +11,6 @@ cat << EOIDK >> /usr/local/share/start-vnc.sh
 #! /bin/sh
 vncserver :1 &
 guacd -f &
-/opt/tomcat9/bin/catalina.sh start  
+/opt/tomcat9/bin/catalina.sh start  &
 
 EOIDK
