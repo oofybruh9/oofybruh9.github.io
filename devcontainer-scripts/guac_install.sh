@@ -10,7 +10,7 @@ wget https://dlcdn.apache.org/guacamole/1.5.5/binary/guacamole-1.5.5.war -O /opt
 cat << EOIDK >> /usr/local/share/start-vnc.sh
 #! /bin/bash
 vncserver :1 &
-guacd -f
-/opt/tomcat9/bin/catalina.sh start
+guacd -f &
+/opt/tomcat9/bin/catalina.sh start  &
 
 EOIDK
