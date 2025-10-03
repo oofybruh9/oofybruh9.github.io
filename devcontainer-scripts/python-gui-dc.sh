@@ -3,7 +3,9 @@ set -e
 echo "http://dl-cdn.alpinelinux.org/alpine/v3.22/community" >> /etc/apk/repositories
 apk update
 setup-xorg-base
-apk add --no-cache guacamole-server guacamole-server-vnc guacamole-server-ssh guacamole-server-libs guacamole-server-encoder openjdk11-jre-headless wget python3 python3-dev py3-pip python3-venv icewm xterm
+apk add --no-cache guacamole-server guacamole-server-vnc guacamole-server-ssh guacamole-server-libs guacamole-server-encoder openjdk11-jre-headless wget python3 python3-dev py3-pip python3-venv icewm xterm pulseaudio pulseaudio-alsa pulseaudio-utils pulseaudio-bluetooth alsa-plugins-pulse
+pactl load-module module-native-protocol-tcp auth-anonymous=1
+usermod -a -G audio $USER
 ln -sf /usr/bin/python3 /usr/bin/python
 wget https://dlcdn.apache.org/tomcat/tomcat-11/v11.0.11/bin/apache-tomcat-11.0.11.tar.gz
 mkdir /opt/tomcat9
