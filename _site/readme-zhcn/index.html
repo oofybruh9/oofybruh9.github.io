@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <!-- multi-device width -->
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <!-- site description -->
+    
+    <meta content="PRoJEct-VeXEd黑客帝国掉字母儿风格的个人主页模板。版本： v2.4特性  狂拽酷炫  代码高亮  MathJax公式插入  文章归档及索引  高度可定制化  加密内容  Mermaid绘图使用方法  下载zip文件，或者将pRoJEct-VeXEd fork到自己的github仓库里  修改_conf..." name="description"/>
+    <!-- referer for 3rd-part images-->
+    <meta content="no-referrer" name="referrer"/>
+    <!-- title -->
+    <title>
+        
+            pRoJEct-NeGYa 中文使用说明
+        
+    </title>
+    <!-- global script of my site-->
+    <script src="http://localhost:4000//src/assets/js/main.js" async></script>
+    <!-- global script of my site-->
+    <script src="http://localhost:4000//src/assets/js/sjcl.js" async></script>    
+    <!-- icon -->
+    <link href="http://localhost:4000//src/assets/img/rubbish.png" rel="shortcut icon bookmark" type="image/x-icon"/>
+    <!-- global stylesheet -->
+    <link rel="stylesheet" href="http://localhost:4000//src/assets/css/main.css" type="text/css"/>  
+    <!-- fontawesome < 4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>    
+    <!-- fontawesome > 4.7.0 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/all.min.css" type="text/css"/> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/svg-with-js.min.css" type="text/css"/> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/regular.min.css" type="text/css"/> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/solid.min.css" type="text/css"/> -->
+    <!-- mathjax -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- mermaid -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.3.0/mermaid.min.js"></script>
+    <script async src="http://localhost:4000//src/assets/js/init-mermaid.js"></script>
+    <!-- The tag `feed_meta` is unrecognized by Github Pages -->
+    <!--  -->
+</head>
+
+  <body class="page">
+    <!-- background animations -->
+<div class="div_bg">
+    <canvas id="c"></canvas>
+</div>
+<script>
+var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+c.height = window.innerHeight;
+c.width = window.innerWidth;
+var txts = "subscribe to oofybruh9 bc he is cool and is a funny furry hahahahahaha";
+txts = txts.split("");
+var font_size = 12;
+var columns = c.width / font_size;
+var drops = [];
+for (var x = 0; x < columns; x++) drops[x] = 1;
+
+function draw() {
+  ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+  ctx.fillRect(0, 0, c.width, c.height);
+  ctx.fillStyle = "#490";
+  ctx.font = font_size + "px arial";
+  for (var i = 0; i < drops.length; i++) {
+    var text = txts[Math.floor(Math.random() * txts.length)];
+    ctx.fillText(text, i * font_size, drops[i] * font_size);
+    if (drops[i] * font_size > c.height || Math.random() > 0.98) drops[i] = 0;
+    drops[i]++;
+  }
+}
+setInterval(draw, 20);
+</script>
+    <!-- collection list, shown by click "archive" buttom in header -->
+<div class="collection_list_container"  id="the_collection_list">
+<div class="collection_list_background"  onclick="close_collection_list()"></div>
+<div class="collection_list" onload="none">
+    <div class="collection_list_header">
+        <!-- TODO: search post -->
+                                            <!-- <a class="search_btn">
+      <i class="fa fa-search"> Search</i>
+    </a>
+    &nbsp; -->
+        <table class="collection_list_header_title">
+            <tr>
+                <td>Archive:</td>
+                <td id="clh_title"></td>
+            </tr>
+        </table>
+        <div class="close_btn" onclick="close_collection_list()">
+            <a class="close_btn_icon">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+    </div>
+    <div class="collection_name_list">
+        <table class="vertical_center_table">
+            <tr>
+                <td>
+                    <ul>
+                        <!-- show all collections -->
+                        <li>
+                            <a class="a_collection_label" onclick="show_collection('all')">All
+                            </a>
+                        </li>
+                        <!-- show a simple collection -->
+                        
+                            
+                                <li>
+                                    <a class="a_collection_label" onclick="show_collection('album')">
+                                        
+                                            album
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a class="a_collection_label" onclick="show_collection('biology')">
+                                        
+                                            biology
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a class="a_collection_label" onclick="show_collection('finance')">
+                                        
+                                            finance
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a class="a_collection_label" onclick="show_collection('math')">
+                                        
+                                            Mathematics
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a class="a_collection_label" onclick="show_collection('my_notes')">
+                                        
+                                            My Notes
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a class="a_collection_label" onclick="show_collection('physics')">
+                                        
+                                            physics
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a class="a_collection_label" onclick="show_collection('portfolio')">
+                                        
+                                            portfolio
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a class="a_collection_label" onclick="show_collection('posts')">
+                                        
+                                            posts
+                                        
+                                    </a>
+                                </li>
+                            
+                        
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="posts_by_cate">
+        <!-- post list in all collections -->
+        <div class="post_list_in_1_collection" id="all">
+            <table class="vertical_center_table">
+                <tr>
+                    <td>
+                        <ul>
+                            
+                                
+                                    <p class="h_collection_label">
+                                        
+                                            album
+                                        
+                                    </p>
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//album/earth/">Our Great Planet!</a>
+                                            </li>
+                                        
+                                    
+                                    <br/>
+                                
+                                    <p class="h_collection_label">
+                                        
+                                            biology
+                                        
+                                    </p>
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//biology/note1/">Note Sample 1 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//biology/note2/">Note Sample 2 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                    <br/>
+                                
+                                    <p class="h_collection_label">
+                                        
+                                            finance
+                                        
+                                    </p>
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//finance/note1/">Note Sample 1 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//finance/note2/">Note Sample 2 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//finance/note3/">Note Sample 3 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//finance/note4/">Note Sample 4 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                    <br/>
+                                
+                                    <p class="h_collection_label">
+                                        
+                                            Mathematics
+                                        
+                                    </p>
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//math/note1/">Note Sample 1 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//math/note2/">Note Sample 2 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//math/note3/">Note Sample 3 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//math/note4/">Note Sample 4 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                    <br/>
+                                
+                                    <p class="h_collection_label">
+                                        
+                                            My Notes
+                                        
+                                    </p>
+                                    
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//my_notes/note1/">Note Sample 1 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//my_notes/note2/">Note Sample 2 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//my_notes/note3/">Note Sample 3 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//my_notes/note4/">Note Sample 4 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                    <br/>
+                                
+                                    <p class="h_collection_label">
+                                        
+                                            physics
+                                        
+                                    </p>
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//physics/note1/">Note Sample 1 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//physics/note2/">Note Sample 2 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//physics/note3/">Note Sample 3 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//physics/note4/">Note Sample 4 With Machine Generated Sentences</a>
+                                            </li>
+                                        
+                                    
+                                    <br/>
+                                
+                                    <p class="h_collection_label">
+                                        
+                                            portfolio
+                                        
+                                    </p>
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//portfolio/portfolio3/">Portfolio Sample 3</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//portfolio/portfolio2/">Portfolio Sample 2</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//portfolio/portfolio1/">Portfolio Sample 1</a>
+                                            </li>
+                                        
+                                    
+                                    <br/>
+                                
+                                    <p class="h_collection_label">
+                                        
+                                            posts
+                                        
+                                    </p>
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//sample2/">Test Toc Level - TOC_LEVEL = 6</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//code-sample/">Sample Code - Quick Sort</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//sample1/">Post Sample 1</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//sjcl/">An Encrypt and Dectrypt tool with sjcl.js</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//markdown-style-reference/">Text Styles and Markdown Quick Reference</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="a_title" href="http://localhost:4000//readme-zhcn/">pRoJEct-NeGYa 中文使用说明</a>
+                                            </li>
+                                        
+                                    
+                                    <br/>
+                                
+                            
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- post list in a collection -->
+        
+            <div class="post_list_in_1_collection" id="album">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//album/earth/">Our Great Planet!</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="biology">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//biology/note1/">Note Sample 1 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//biology/note2/">Note Sample 2 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="finance">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//finance/note1/">Note Sample 1 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//finance/note2/">Note Sample 2 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//finance/note3/">Note Sample 3 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//finance/note4/">Note Sample 4 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="math">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//math/note1/">Note Sample 1 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//math/note2/">Note Sample 2 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//math/note3/">Note Sample 3 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//math/note4/">Note Sample 4 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="my_notes">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//my_notes/note1/">Note Sample 1 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//my_notes/note2/">Note Sample 2 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//my_notes/note3/">Note Sample 3 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//my_notes/note4/">Note Sample 4 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="physics">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//physics/note1/">Note Sample 1 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//physics/note2/">Note Sample 2 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//physics/note3/">Note Sample 3 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//physics/note4/">Note Sample 4 With Machine Generated Sentences</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="portfolio">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//portfolio/portfolio3/">Portfolio Sample 3</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//portfolio/portfolio2/">Portfolio Sample 2</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//portfolio/portfolio1/">Portfolio Sample 1</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="posts">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//sample2/">Test Toc Level - TOC_LEVEL = 6</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//code-sample/">Sample Code - Quick Sort</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//sample1/">Post Sample 1</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//sjcl/">An Encrypt and Dectrypt tool with sjcl.js</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//markdown-style-reference/">Text Styles and Markdown Quick Reference</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a class="a_title" href="http://localhost:4000//readme-zhcn/">pRoJEct-NeGYa 中文使用说明</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+    </div>
+</div>
+</div>
+    <div class="container" id="ctner">
+       <div class="header">
+  <table class="vertical_center_table">
+    <tr>
+      <td>
+        <nav class="nav_bar">
+          <ul>
+            <!-- left header -->
+            <li class="li_left">
+              <!-- open collection tree -->
+              
+              <a class="header_btn" onclick="open_collection_list()">
+                <i class="fa fa-folder btn_icon"></i>
+                  
+                  <p class="btn_text">Archives</p>
+                  
+              </a>
+              
+              <!-- home -->
+              
+              <a class="header_btn" href="http://localhost:4000/">
+                <i class="fa fa-home btn_icon"></i>
+                  
+                  <p class="btn_text">Home</p>
+                  
+              </a>
+              
+              <!-- maximize -->
+              
+              <a class="header_btn" id="mxmz_btn" onclick="toggle_maximize()">
+                <i class="fa fa-window-maximize btn_icon"></i>
+                  
+                  <p class="btn_text" id="mxmz_text">Maximize</p>
+                  
+              </a>
+              
+              <!-- access token -->
+              
+            </li>
+            <!-- right header -->
+            <span class="span_right">
+              
+               <!-- back to top -->
+               <a class="header_btn" id="back_to_top_btn" href="#top_hook">
+                <i class="fa fa-fast-backward btn_icon"></i>
+                  
+                  <p class="btn_text">Top</p>
+                  
+              </a>
+              <!-- scroll up -->
+              <a class="header_btn" onclick="scroll_percentage(-0.88)">
+                <i class="fa fa-backward btn_icon"></i>
+                  
+                  <p class="btn_text">Prev</p>
+                  
+              </a>
+              <!-- scroll down -->
+              <a class="header_btn" onclick="scroll_percentage(0.88)">
+                <i class="fa fa-forward btn_icon"></i>
+                  
+                  <p class="btn_text">Next</p>
+                  
+              </a>
+              <!-- popup table of content -->
+              <a class="header_btn popup_btn" onclick="toggle_toc()">
+                <i class="fa fa-list btn_icon"></i>
+                  
+                  <p class="btn_text">Index</p>
+                  
+              </a>
+              
+            </span>
+          </ul>
+        </nav>
+        <!-- <hr /> -->
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- table of content -->
+
+<div class="div_toc toc" id="popup_toc">
+  
+  <!-- generate toc -->
+  <ul id="ul_toc" class="ul_toc">
+  <li><a href="#特性">特性</a></li>
+  <li><a href="#使用方法">使用方法</a></li>
+  <li><a href="#工程结构">工程结构</a></li>
+  <li><a href="#更新日志">更新日志</a></li>
+</ul>
+</div>
+
+<!-- toggle maximize -->
+
+<script>
+  var ctner_state = 0;
+  var ctner = document.getElementById("ctner");
+</script>
+
+<!-- encrypt and decrypt -->
+
+
+      <div class="div_article" id="div_atcl">
+        <div class="hook" id="top_hook"></div>
+        <article
+          id="main_atcl"
+          itemscope
+          itemtype="http://schema.org/BlogPosting"
+        >
+          <h1 id="pRoJEct-NeGYa 中文使用说明">pRoJEct-NeGYa 中文使用说明</h1>
+<div class="post_info">
+  <!-- author -->
+  
+  <span>
+    <i class="fa fa-user-secret"></i>
+    DeerRIDER
+  </span>
+  
+  <!-- date -->
+  
+  <!-- category -->
+  
+  <span>
+    <i class="fa fa-archive"></i>
+    Sample
+  </span>
+  
+</div>
+<!-- abstract -->
+
+
+<br />
+<h1 id="project-vexed">PRoJEct-VeXEd</h1>
+
+<p>黑客帝国掉字母儿风格的个人主页模板。</p>
+
+<p>版本： v2.4</p>
+
+<h2 id="特性">特性</h2>
+
+<ol>
+  <li>狂拽酷炫</li>
+  <li>代码高亮</li>
+  <li>MathJax公式插入</li>
+  <li>文章归档及索引</li>
+  <li>高度可定制化</li>
+  <li>加密内容</li>
+  <li>Mermaid绘图</li>
+</ol>
+
+<h2 id="使用方法">使用方法</h2>
+
+<ul>
+  <li>下载<a href="https://codeload.github.com/gmkzwwg/pRoJEct-VeXEd/zip/master">zip文件</a>，或者将<a href="https://github.com/gmkzwwg/pRoJEct-VeXEd">pRoJEct-VeXEd</a> fork到自己的github仓库里</li>
+  <li>修改_config.yml文件</li>
+  <li>（自定义域名）修改CNAME文件</li>
+  <li>修改pages/index.md文件，自定义主页</li>
+  <li>删除collections/_posts/文件夹里的文件，添加自己的文章</li>
+  <li>同步到github远程仓库</li>
+  <li>将加密内容作为加密文本的id
+    <ul>
+      <li>可使用在线工具加密文本：<a href="http://bitwiseshiftleft.github.io/sjcl/demo/">sjcl官方</a>  <a href="http://bcqlr.com/sjcl/">bcqlr.com</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="工程结构">工程结构</h2>
+
+<ul>
+  <li>src/：工程源码及文件
+    <ul>
+      <li>_includes/：子页面模块</li>
+      <li>_layouts/：页面模板（单纯地组合子页面模块）</li>
+      <li>_sass/：分类的scss样式表文件</li>
+      <li>assets/css/：样式表文件</li>
+      <li>assets/fonts/：字体文件</li>
+      <li>assets/js/：javsscript 脚本文件</li>
+      <li>assets/img/：图片</li>
+    </ul>
+  </li>
+  <li>collections/：文章集合
+    <ul>
+      <li>_post/：主要文章集合</li>
+      <li>…/：自定义文章集合</li>
+    </ul>
+  </li>
+  <li>pages/：主要页面
+    <ul>
+      <li>index.md：网站主页</li>
+      <li>404.md：404页面</li>
+      <li>collections.md：所有文章索引</li>
+    </ul>
+  </li>
+  <li>config.yml：网站配置文件</li>
+  <li>.gitignore：Git过滤规则文件</li>
+  <li>LICENSE：工程开源协议</li>
+  <li>README.md：工程自述文件</li>
+</ul>
+
+<h2 id="更新日志">更新日志</h2>
+
+<p>2024.11.19: V3.0 进行了大量重构。</p>
+<ul>
+  <li>增加了以 categories、tags 分类文章支持。</li>
+  <li>增加了 js 插件的版本指定、ascii 插画。</li>
+  <li>更改了外观。</li>
+</ul>
+
+<p>2021.8.21： v2.4 增加Mermaid绘图功能，重新安排布局</p>
+
+<p>2020.11.18： v2.3 增加评论功能</p>
+
+<p>2020.11.16： v2.2 完善基础样式</p>
+
+<p>2020.11.12: v2.1 增加collection功能</p>
+
+<p>2020.7.24: v2.0 修改工程结构，优化scss文件结构</p>
+
+<p>2019.6.15：v1.0 正式版</p>
+
+ <div class="post_list">
+
+</div> 
+
+        </article>
+        
+      </div>
+    </div>
+  </body>
+</html>
