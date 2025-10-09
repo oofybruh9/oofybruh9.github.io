@@ -47,9 +47,6 @@ collections:
   posts:
     output          : true
 
-# 3. Comment settings（disqus.com）
-disqus_username     : gmkzwwg
-
 # 4. Default page configuration
 defaults:
   -    
@@ -65,7 +62,7 @@ defaults:
       encrypted_text      : false       # whether use encrytion function by default
       toc                 : true        # whether show table of content by default
       toc_level           : 3           # the toc depth by default
-      author              :             # author name by default
+      author              : true         # author name by default
       show_date           : false       # whether show date message by default
       category            :             # category by default
       post_list           : false       # whether show list of post by default      
@@ -74,16 +71,16 @@ defaults:
       highlight           : false
 
 # 5. Social Media Accounts
-email               : "gmkzwwg@outlook.com" 
+email               : "oofybruh@gmail.com" 
 linkedin            : 
-github              : "/gmkzwwg/pRoJEct-NeGYa" 
+github              : "/oofybruh9" 
 gitlab              : 
-website             : "gmkzwwg.github.io/pRoJEct-NeGYa/"
-twitter             : "just-test"
-facebook            : "just-test"
+website             : "#"
+twitter             : "oofybruh9"
+facebook            : 
 instagram           : 
-youtube             : "just-test"
-steam               : "just-test"
+youtube             : "oofybruh9"
+steam               : "oofybruh9"
 weibo               :
 
 # 6. Where things are
