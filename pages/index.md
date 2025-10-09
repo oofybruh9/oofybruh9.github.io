@@ -25,7 +25,7 @@ i am oofybruh9, a passionate developer and video maker with the hopes of becomin
 - 👯 I’m looking to collaborate on anything useful
 - 🤔 I’m looking for help with coding
 - 💬 Ask me about coding, bluey, gravity falls, DuckTales (2017), video making, or linux related stuff
-- 📫 How to reach me: not available as of sept 21
+- 📫 How to reach me: tbd
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: I started coding at the age of 8
 - ▶️ YouTube! [@oofybruh9](https://youtube.com/@oofybruh9)
