@@ -6,8 +6,8 @@ comment: true
 home_btn: true
 btn_text: true
 footer: true
-title: ""
-author: ""
+title: "oofybruh9's blog"
+author: "oofybruh9"
 encrypted_text: true
 permalink: /
 ---
