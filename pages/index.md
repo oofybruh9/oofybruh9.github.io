@@ -36,6 +36,9 @@ i am oofybruh9, a passionate developer and video maker with the hopes of becomin
 
   - [x] reach 300 subs
   - [x] reach 500 subs
+  - [x] be noticed by a famous person (thanks @ErikHilinger3d on YT)
+  - [x] get 2k+ views on a short
+  - [ ] be famous
 
 ## encrypted sh!t
 <p style="color: #010">hint: furry</p>
