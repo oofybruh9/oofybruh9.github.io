@@ -86,7 +86,7 @@
                                             {% for post in collection.docs %}
                                                 {% if post.publish != false %}
                                                     <li>
-                                                        <a class="a_title" href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+                                                        <a class="a_title" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
                                                     </li>
                                                 {% endif %}
                                             {% endfor %}
@@ -106,7 +106,7 @@
                                     {% for post in collection.docs %}
                                         {% if post.publish != false %}
                                             <li>
-                                                <a class="a_title" href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+                                                <a class="a_title" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
                                             </li>
                                         {% endif %}
                                     {% endfor %}
@@ -128,7 +128,7 @@
                                 {% for post in collection.docs %}
                                     {% if post.publish != false %}
                                         <li>
-                                            <a class="a_title" href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+                                            <a class="a_title" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
                                         </li>
                                     {% endif %}
                                 {% endfor %}

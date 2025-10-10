@@ -23,25 +23,42 @@
         {% endif %}
     </title>
     <!-- global script of my site-->
-    <script src="{{site.url}}{{site.baseurl}}/src/assets/js/main.js" async></script>
+    <script src="{{site.baseurl}}/src/assets/js/main.js" async></script>
     <!-- global script of my site-->
-    <script src="{{site.url}}{{site.baseurl}}/src/assets/js/sjcl.js" async></script>    
+    <script src="{{site.baseurl}}/src/assets/js/sjcl.js" async></script>    
     <!-- icon -->
-    <link href="{{site.url }}{{site.baseurl}}/src/assets/img/rubbish.png" rel="shortcut icon bookmark" type="image/x-icon"/>
+    <link href="{{site.baseurl}}/src/assets/img/favicon.png" rel="shortcut icon bookmark" type="image/png"/>
     <!-- global stylesheet -->
-    <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/src/assets/css/main.css" type="text/css"/>  
+    <link rel="stylesheet" href="{{site.baseurl}}/src/assets/css/main.css" type="text/css"/>  
+    <!--preload fonts-->
+    <link rel="preload" href="{{site.baseurl}}/src/assets/fonts/material_rounded.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{site.baseurl}}/src/assets/fonts/material_rounded.ttf" as="font" type="font/ttf" crossorigin>
+    <style>
+        @font-face {
+            font-family: "material";
+            src: url('{{site.baseurl}}/src/assets/fonts/material_rounded.ttf') format('truetype'), url('{{site.baseurl}}/src/assets/fonts/material_rounded.woff2') format('woff2');
+        }
+        .materialsymbols{
+            font-family: "material";
+            font-style: normal;
+            font-size: 3vh;
+            vertical-align: middle;
+        }
+        .msym{
+            font-family: "material";
+            font-style: normal;
+            font-size: 2vh;
+            margin: 0px;
+            vertical-align: middle;
+        }
+    </style>
     <!-- fontawesome < 4.7.0 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>    
-    <!-- fontawesome > 4.7.0 -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{{site.fontawesome_version}}/css/all.min.css" type="text/css"/> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{{site.fontawesome_version}}/css/svg-with-js.min.css" type="text/css"/> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{{site.fontawesome_version}}/css/regular.min.css" type="text/css"/> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{{site.fontawesome_version}}/css/solid.min.css" type="text/css"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>  
     <!-- mathjax -->
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <!-- mermaid -->
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/{{site.mermaid_version}}/mermaid.min.js"></script>
-    <script async src="{{site.url}}{{site.baseurl}}/src/assets/js/init-mermaid.js"></script>
+    <script async src="{{site.baseurl}}/src/assets/js/init-mermaid.js"></script>
     <!-- The tag `feed_meta` is unrecognized by Github Pages -->
     <!--  -->
 </head>

@@ -2,21 +2,21 @@
   <!-- author -->
   {% if page.author %}
   <span>
-    <i class="fa fa-user-secret"></i>
+    <i class="materialsymbols">person</i>
     {{ page.author }}
   </span>
   {% endif %}
   <!-- date -->
   {% if page.show_date %}
   <span>
-    <i class="fa fa-calendar"></i>
+    <i class="materialsymbols">calendar_month</i>
     {{ page.date | date: "%b %d, %Y" }}
   </span>
   {% endif %}
   <!-- category -->
   {% if page.category %}
   <span>
-    <i class="fa fa-archive"></i>
+    <i class="materialsymbols">archive</i>
     {{ page.category }}
   </span>
   {% endif %}

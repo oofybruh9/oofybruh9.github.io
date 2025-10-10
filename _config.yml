@@ -1,42 +1,31 @@
 # 1. Site Settings
 title               : 'blog of the funni'
 owner               : "oofybruh9"
-url                 : "https://oofybruh9.github.io"
-baseurl             : "/"
-## baseurl            : ""
+url                 : "https://oofybruh9.is-a.dev"
+baseurl             : ""
 permalink           : /:title/
 description         : "the funny oofybruh9 blog of sorts"
 markdown            : kramdown
-statement           : "Designed by DeerRIDER, used by oofybruh9, All Rights Reserved"
-# bgtext              : "01"
-bgtext              : "subscribe to oofybruh9 bc he is cool and is a funny furry hahahahahaha"
+statement           : "designed by DeerRIDER, used by oofybruh9, All Rights Reserved"
+bgtext              : "01"
 
 
 # 2. Collections
 collections:
-  math:   
-    output          : true
-    permalink       : /:collection/:title/
-    sort_by         : date
-    alias           : "Mathematics"
   portfolio:
     output          : true
     permalink       : /:collection/:title/
-    order: # specify post order manually
-      - portfolio3.md
-      - portfolio2.md
-      - portfolio1.md
   album:
     output          : true
     permalink       : /:collection/:title/
     sort_by         : date
-  physics:
+  game:
     output          : true
     permalink       : /:collection/:title/
-  biology:
+  lore:
     output          : true
     permalink       : /:collection/:title/
-  finance:
+  music:
     output          : true
     permalink       : /:collection/:title/
   my_notes:
@@ -62,18 +51,18 @@ defaults:
       encrypted_text      : false       # whether use encrytion function by default
       toc                 : true        # whether show table of content by default
       toc_level           : 3           # the toc depth by default
-      author              : true         # author name by default
-      show_date           : false       # whether show date message by default
-      category            :             # category by default
-      post_list           : false       # whether show list of post by default      
-      comment             : false
-      footer              : false       # whether show footer by default
+      author              : true        # author name by default
+      show_date           : true        # whether show date message by default
+      category            : true        # category by default
+      post_list           : true        # whether show list of post by default      
+      comment             : true
+      footer              : true        # whether show footer by default
       highlight           : false
 
 # 5. Social Media Accounts
 email               : "oofybruh@gmail.com" 
 linkedin            : 
-github              : "/oofybruh9" 
+github              : "oofybruh9" 
 gitlab              : 
 website             : "#"
 twitter             : "oofybruh9"
@@ -85,6 +74,7 @@ weibo               :
 
 # 6. Where things are
 source              : .
+assets_dir          : assets
 destination         : ./_site
 collections_dir     : collections
 plugins_dir         : src/_plugins  # takes an array of strings and loads plugins in that order

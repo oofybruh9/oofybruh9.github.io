@@ -36,3 +36,7 @@ i am oofybruh9, a passionate developer and video maker with the hopes of becomin
 
   - [x] reach 300 subs
   - [x] reach 500 subs
+
+## encrypted sh!t
+<p style="color: #010">hint: furry</p>
+<p class="encrypted" id="wxBSMKiLJlnC4W9yqSa9vAZvzAOmXQNFh/o01CImoTAXkioi4DqP7FQ15i+l1mUL+y5Hg7bz2ZCCeTgoMnh7A9AHn18u2UVj4Ov9qSn6rQTV19X1NM1SJ12OXIulxFdPwaBcIC9HUzu7fHJF9WRBeviqTfzocZkA==">Encrypted content!</p>

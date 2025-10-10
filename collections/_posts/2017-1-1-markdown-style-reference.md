@@ -1,6 +1,6 @@
 ---
 title: Text Styles and Markdown Quick Reference
-author: DeerRIDER
+author: oofybruh9
 post_list: "date"
 collection_list: true
 toc: true
@@ -13,7 +13,7 @@ maximize: true
 encrypted_text: true
 toc_level: 4
 category: Sample
-date: 2019-5-25
+date: 2025-10-9
 excerpt: "This is excerpt."
 abstract: "This is abstract. Abstract is blank by default."
 ---
