@@ -1,0 +1,33 @@
+retroarch:
+retroarch -L D:\path\to\libretr\core.dll D:\path\to\game.rom
+
+snes9x:
+snes9x "D:\path\to\rom.smc"
+
+fceux
+fceux D:\path\to\rom.zip\nes\fds
+
+zsnes
+zsnes* -s D:\path\to\game.sfc
+
+mesen
+Mesen D:\path\to\rom.zip /region=Auto
+
+Dolphin 5.0-11132 or newer:
+Dolphin(set variable) -b -e "D:\Path\to\Game.iso"
+
+Citra
+cirta D:\path\to\rom.3ds
+
+MelonDS
+MelonDS (set Variable) D:\path\to\rom.nds
+
+VBA-M
+vba-m (set variable) "D:\path\to\rom.gba"
+
+SkyEmu (native build only A.K.A you have to compile it)
+SkyEmu (set variable) D:\path\to\rom.gba
+
+MAME:
+mame(setVAR) <system> -mouse -window
+

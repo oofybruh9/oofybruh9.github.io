@@ -1,0 +1,231 @@
+[21:34:36.719] |I| [config::init_config]: backend-renderer: OpenGL
+[21:34:36.719] |I| [config::init_config]: log-level: 0
+[21:34:36.861] |I| [SDL_main]: Vita3K v0.1.9 3544-66041f0c
+[21:34:36.861] |I| [SDL_main]: Number of logical CPU cores: 24
+[21:34:36.861] |I| [SDL_main]: Available ram memory: 16218 MiB
+[21:34:36.862] |I| [app::init]: Base path: C:/Emu/Vita3K/
+[21:34:36.862] |I| [app::init]: User pref path: C:/Users/oofyb/AppData/Roaming/Vita3K/Vita3K/
+[21:34:37.009] |I| [renderer::gl::create]: GPU = NVIDIA GeForce RTX 3060/PCIe/SSE2
+[21:34:37.009] |I| [renderer::gl::create]: GL_VERSION = 4.6.0 NVIDIA 546.33
+[21:34:37.009] |I| [renderer::gl::create]: GL_SHADING_LANGUAGE_VERSION = 4.60 NVIDIA
+[21:34:37.009] |I| [renderer::gl::create]: Your GPU supports shader interlock, some games that use programmable blending will have better performance.
+[21:34:37.377] |I| [compat::update_app_compat_db]: Applications compatibility database is up to date.
+[21:34:44.145] |I| [gui::set_vsync_state]: V-Sync state: true
+[21:34:44.168] |I| [load_app_impl]: cpu-backend: Dynarmic
+[21:34:44.168] |I| [load_app_impl]: CPU Optimisation state: true
+[21:34:44.168] |I| [load_app_impl]: ngs state: true
+[21:34:44.168] |I| [load_app_impl]: Resolution multiplier: 1
+[21:34:44.169] |I| [load_app_impl]: modules mode: Automatic
+[21:34:44.169] |I| [load_app_impl]: Title: Terri-Fried
+[21:34:44.169] |I| [load_app_impl]: Serial: PLYMARS01
+[21:34:44.169] |I| [load_app_impl]: Version: 1.00
+[21:34:44.169] |I| [load_app_impl]: Category: gd
+[21:34:44.170] |I| [load_module]: Loading module "app0:eboot.bin"
+[21:34:44.189] |W| [relocate_entry]: Unhandled relocation code 102.
+[21:34:44.190] |I| [load_self]: Loaded module segment 0 @ [0x80004000 - 0x80129F50 / 0x00000000] (size: 0x00125F50) of module app0:eboot.bin
+[21:34:44.190] |I| [load_self]: Loaded module segment 1 @ [0x8012A000 - 0x8018E5F8 / 0x00140000] (size: 0x000645F8) of module app0:eboot.bin
+[21:34:44.191] |I| [load_self]: Linking SELF app0:eboot.bin...
+[21:34:44.191] |D| [load_var_exports]: 	NID 0x6c2224ba (NID_MODULE_INFO) at 0x801296f0
+[21:34:44.191] |D| [load_var_exports]: 	NID 0x70fba1e7 (SCE_PROC_PARAMS) at 0x8012974c
+[21:34:44.191] |I| [load_module]: Module /Terri-Fried (at "app0:eboot.bin") loaded
+[21:34:44.192] |I| [load_app_impl]: Main executable /Terri-Fried (eboot.bin) loaded
+[21:34:44.192] |I| [load_module]: Loading module "vs0:sys/external/libc.suprx"
+[21:34:44.199] |I| [load_self]: vs0:sys/external/libc.suprx: Skipping special segment 0x6fffff01...
+[21:34:44.199] |I| [load_self]: Loaded module segment 0 @ [0x8018F000 - 0x801E08A4 / 0x81000000] (size: 0x000518A4) of module vs0:sys/external/libc.suprx
+[21:34:44.200] |I| [load_self]: Loaded module segment 1 @ [0x801E1000 - 0x801E38A0 / 0x81052000] (size: 0x000028A0) of module vs0:sys/external/libc.suprx
+[21:34:44.200] |I| [load_self]: Linking SELF vs0:sys/external/libc.suprx...
+[21:34:44.200] |D| [load_var_exports]: 	NID 0x936c8a78 (SYSLYB) at 0x801d6314
+[21:34:44.200] |D| [load_var_exports]: 	NID 0x6c2224ba (NID_MODULE_INFO) at 0x801cb4dc
+[21:34:44.200] |I| [load_module]: Module SceLibc (at "vs0:sys/external/libc.suprx") loaded
+[21:34:44.200] |I| [load_module]: Loading module "vs0:sys/external/libfios2.suprx"
+[21:34:44.205] |I| [load_self]: vs0:sys/external/libfios2.suprx: Skipping special segment 0x6fffff01...
+[21:34:44.205] |I| [load_self]: Loaded module segment 0 @ [0x801E4000 - 0x80210CBF / 0x81000000] (size: 0x0002CCBF) of module vs0:sys/external/libfios2.suprx
+[21:34:44.205] |I| [load_self]: Loaded module segment 1 @ [0x80211000 - 0x80216255 / 0x8102D000] (size: 0x00005255) of module vs0:sys/external/libfios2.suprx
+[21:34:44.205] |I| [load_self]: Linking SELF vs0:sys/external/libfios2.suprx...
+[21:34:44.205] |D| [load_var_exports]: 	NID 0x936c8a78 (SYSLYB) at 0x80210bc8
+[21:34:44.205] |D| [load_var_exports]: 	NID 0x6c2224ba (NID_MODULE_INFO) at 0x80207f08
+[21:34:44.205] |I| [load_module]: Module SceLibFios2 (at "vs0:sys/external/libfios2.suprx") loaded
+[21:34:44.205] |I| [load_module]: Loading module "vs0:sys/external/libSceFt2.suprx"
+[21:34:44.211] |I| [load_self]: Loaded module segment 0 @ [0x80217000 - 0x80267F04 / 0x81000000] (size: 0x00050F04) of module vs0:sys/external/libSceFt2.suprx
+[21:34:44.211] |I| [load_self]: Loaded module segment 1 @ [0x80268000 - 0x802682F4 / 0x81051000] (size: 0x000002F4) of module vs0:sys/external/libSceFt2.suprx
+[21:34:44.212] |I| [load_self]: Linking SELF vs0:sys/external/libSceFt2.suprx...
+[21:34:44.212] |D| [load_var_exports]: 	NID 0x936c8a78 (SYSLYB) at 0x802537dc
+[21:34:44.212] |D| [load_var_exports]: 	NID 0x6c2224ba (NID_MODULE_INFO) at 0x80252f10
+[21:34:44.212] |I| [load_module]: Module SceLibft2 (at "vs0:sys/external/libSceFt2.suprx") loaded
+[21:34:44.212] |I| [load_module]: Loading module "vs0:sys/external/libpvf.suprx"
+[21:34:44.214] |I| [load_self]: Loaded module segment 0 @ [0x80269000 - 0x80278F14 / 0x81000000] (size: 0x0000FF14) of module vs0:sys/external/libpvf.suprx
+[21:34:44.214] |I| [load_self]: Loaded module segment 1 @ [0x80279000 - 0x80279008 / 0x81010000] (size: 0x00000008) of module vs0:sys/external/libpvf.suprx
+[21:34:44.214] |I| [load_self]: Linking SELF vs0:sys/external/libpvf.suprx...
+[21:34:44.214] |D| [load_var_exports]: 	NID 0x936c8a78 (SYSLYB) at 0x80277710
+[21:34:44.214] |D| [load_var_exports]: 	NID 0x6c2224ba (NID_MODULE_INFO) at 0x80277300
+[21:34:44.214] |I| [load_module]: Module SceLibPvf (at "vs0:sys/external/libpvf.suprx") loaded
+[21:34:44.222] |D| [start_module]: Running module_start of library: SceLibc at address 0x8018f871
+[21:34:44.230] |T| [open_file]: sceKernelGetStdin: Opening terminal tty0:
+[21:34:44.231] |T| [open_file]: sceKernelGetStdout: Opening terminal tty0:
+[21:34:44.231] |T| [open_file]: sceKernelGetStderr: Opening terminal tty0:
+[21:34:44.235] |I| [start_module]: Module SceLibc (at "vs0:sys/external/libc.suprx") module_start returned 0x0
+[21:34:44.237] |D| [start_module]: Running module_start of library: SceLibFios2 at address 0x801e4001
+[21:34:44.245] |W| [export_sceKernelGetProcessId::<lambda_1>::operator ()]: Stubbed sceKernelGetProcessId import called. (pid: 1)
+[21:34:44.245] |I| [start_module]: Module SceLibFios2 (at "vs0:sys/external/libfios2.suprx") module_start returned 0x0
+[21:34:44.270] |I| [export_sceIoOpen]: Opening file: tty0:
+[21:34:44.270] |T| [open_file]: sceIoOpen: Opening terminal tty0:
+[21:34:44.270] |I| [export_sceIoOpen]: Opening file: tty0:
+[21:34:44.270] |T| [open_file]: sceIoOpen: Opening terminal tty0:
+[21:34:44.271] |I| [export_sceIoOpen]: Opening file: tty0:
+[21:34:44.271] |T| [open_file]: sceIoOpen: Opening terminal tty0:
+[21:34:44.284] |I| [export_sceIoOpen]: Opening file: ux0:data/terri-fried.save
+[21:34:44.284] |T| [open_file]: sceIoOpen: Opening file ux0:data/terri-fried.save (ux0:/data/terri-fried.save), fd: 0x6
+[21:34:44.289] |T| [close_file]: sceIoClose: Closing file fd: 0x6
+[21:34:44.293] |I| [export_sceIoOpen]: Opening file: ux0:data/terri-fried.save
+[21:34:44.293] |T| [open_file]: sceIoOpen: Opening file ux0:data/terri-fried.save (ux0:/data/terri-fried.save), fd: 0x7
+[21:34:44.298] |T| [write_file]: sceIoWrite: Writing to fd: 0x7, size: 1
+[21:34:44.298] |T| [close_file]: sceIoClose: Closing file fd: 0x7
+[21:34:44.318] |W| [export_sceGxmMapFragmentUsseMemory::<lambda_1>::operator ()]: Stubbed sceGxmMapFragmentUsseMemory import called. (always return success)
+[21:34:44.337] |W| [export_sceGxmMapVertexUsseMemory::<lambda_1>::operator ()]: Stubbed sceGxmMapVertexUsseMemory import called. (always return success)
+[21:34:44.339] |E| [export_sceSysmoduleIsLoaded::<lambda_2>::operator ()]: sceSysmoduleIsLoaded returned SCE_SYSMODULE_ERROR_UNLOADED (0x805a1001)
+[21:34:44.339] |I| [export_sceSysmoduleLoadModule]: Loading module ID: SCE_SYSMODULE_PGF
+[21:34:44.339] |I| [load_module]: Loading module "vs0:sys/external/libpgf.suprx"
+[21:34:44.340] |I| [load_self]: Loaded module segment 0 @ [0x80411000 - 0x80416CB4 / 0x81000000] (size: 0x00005CB4) of module vs0:sys/external/libpgf.suprx
+[21:34:44.340] |I| [load_self]: Loaded module segment 1 @ [0x803DC000 - 0x803DCFE8 / 0x81006000] (size: 0x00000FE8) of module vs0:sys/external/libpgf.suprx
+[21:34:44.340] |I| [load_self]: Linking SELF vs0:sys/external/libpgf.suprx...
+[21:34:44.340] |D| [load_var_exports]: 	NID 0x936c8a78 (SYSLYB) at 0x80416a64
+[21:34:44.340] |D| [load_var_exports]: 	NID 0x6c2224ba (NID_MODULE_INFO) at 0x80416810
+[21:34:44.340] |I| [load_module]: Module SceLibPgf (at "vs0:sys/external/libpgf.suprx") loaded
+[21:34:44.341] |I| [export_sceIoOpen]: Opening file: app0:resources/egg.png
+[21:34:44.341] |T| [open_file]: sceIoOpen: Opening file app0:resources/egg.png (ux0:/app/PLYMARS01/resources/egg.png), fd: 0x8
+[21:34:44.358] |T| [close_file]: sceIoClose: Closing file fd: 0x8
+[21:34:44.359] |I| [export_sceIoOpen]: Opening file: app0:resources/lava.png
+[21:34:44.359] |T| [open_file]: sceIoOpen: Opening file app0:resources/lava.png (ux0:/app/PLYMARS01/resources/lava.png), fd: 0x9
+[21:34:44.367] |T| [close_file]: sceIoClose: Closing file fd: 0x9
+[21:34:44.367] |I| [export_sceIoOpen]: Opening file: app0:resources/platform.png
+[21:34:44.367] |T| [open_file]: sceIoOpen: Opening file app0:resources/platform.png (ux0:/app/PLYMARS01/resources/platform.png), fd: 0xa
+[21:34:44.368] |T| [close_file]: sceIoClose: Closing file fd: 0xa
+[21:34:44.368] |I| [export_sceIoOpen]: Opening file: app0:resources/coin.png
+[21:34:44.368] |T| [open_file]: sceIoOpen: Opening file app0:resources/coin.png (ux0:/app/PLYMARS01/resources/coin.png), fd: 0xb
+[21:34:44.369] |T| [close_file]: sceIoClose: Closing file fd: 0xb
+[21:34:44.369] |I| [export_sceIoOpen]: Opening file: app0:resources/scorebox.png
+[21:34:44.370] |T| [open_file]: sceIoOpen: Opening file app0:resources/scorebox.png (ux0:/app/PLYMARS01/resources/scorebox.png), fd: 0xc
+[21:34:44.370] |T| [close_file]: sceIoClose: Closing file fd: 0xc
+[21:34:44.370] |I| [export_sceIoOpen]: Opening file: app0:resources/logo.png
+[21:34:44.370] |T| [open_file]: sceIoOpen: Opening file app0:resources/logo.png (ux0:/app/PLYMARS01/resources/logo.png), fd: 0xd
+[21:34:44.372] |T| [close_file]: sceIoClose: Closing file fd: 0xd
+[21:34:44.372] |I| [export_sceIoOpen]: Opening file: app0:resources/splash_egg.png
+[21:34:44.372] |T| [open_file]: sceIoOpen: Opening file app0:resources/splash_egg.png (ux0:/app/PLYMARS01/resources/splash_egg.png), fd: 0xe
+[21:34:44.373] |T| [close_file]: sceIoClose: Closing file fd: 0xe
+[21:34:44.373] |I| [export_sceIoOpen]: Opening file: app0:/resources/launch.ogg
+[21:34:44.373] |T| [open_file]: sceIoOpen: Opening file app0:/resources/launch.ogg (ux0:/app/PLYMARS01/resources/launch.ogg), fd: 0xf
+[21:34:44.404] |T| [close_file]: sceIoClose: Closing file fd: 0xf
+[21:34:44.404] |I| [export_sceIoOpen]: Opening file: app0:/resources/click.ogg
+[21:34:44.404] |T| [open_file]: sceIoOpen: Opening file app0:/resources/click.ogg (ux0:/app/PLYMARS01/resources/click.ogg), fd: 0x10
+[21:34:44.406] |T| [close_file]: sceIoClose: Closing file fd: 0x10
+[21:34:44.406] |I| [export_sceIoOpen]: Opening file: app0:/resources/die.ogg
+[21:34:44.406] |T| [open_file]: sceIoOpen: Opening file app0:/resources/die.ogg (ux0:/app/PLYMARS01/resources/die.ogg), fd: 0x11
+[21:34:44.409] |T| [close_file]: sceIoClose: Closing file fd: 0x11
+[21:34:44.409] |I| [export_sceIoOpen]: Opening file: app0:/resources/coin.ogg
+[21:34:44.409] |T| [open_file]: sceIoOpen: Opening file app0:/resources/coin.ogg (ux0:/app/PLYMARS01/resources/coin.ogg), fd: 0x12
+[21:34:44.411] |T| [close_file]: sceIoClose: Closing file fd: 0x12
+[21:34:44.412] |I| [export_sceIoOpen]: Opening file: app0:/resources/splash.ogg
+[21:34:44.412] |T| [open_file]: sceIoOpen: Opening file app0:/resources/splash.ogg (ux0:/app/PLYMARS01/resources/splash.ogg), fd: 0x13
+[21:34:44.414] |T| [close_file]: sceIoClose: Closing file fd: 0x13
+[21:34:44.414] |I| [export_sceIoOpen]: Opening file: app0:/resources/select.ogg
+[21:34:44.414] |T| [open_file]: sceIoOpen: Opening file app0:/resources/select.ogg (ux0:/app/PLYMARS01/resources/select.ogg), fd: 0x14
+[21:34:44.416] |T| [close_file]: sceIoClose: Closing file fd: 0x14
+[21:34:44.422] |I| [export_sceIoOpen]: Opening file: app0:resources/font.otf
+[21:34:44.423] |T| [open_file]: sceIoOpen: Opening file app0:resources/font.otf (ux0:/app/PLYMARS01/resources/font.otf), fd: 0x15
+[21:34:44.475] |I| [renderer::load_shader_generic]: Generating frag shader b9d5693c598b0f23b4114941a7055d642fbf46a68488a6edc7b4313b58983966
+[21:34:44.476] |D| [shader::create_parameters]: [DEFAULT  + 0] sa0 = (float4) uClearColor
+[21:34:44.476] |T| [shader::usse::USSERecompiler::compile_code_node]: Compiling code_0, size = 1
+[21:34:44.476] |T| [shader::usse::USSETranslatorVisitor::vpck]: 	40840d7ea0198002: VPCKF16F32 sa0.xyzw (sa0.xyzw sa2.xyzw) [noscale]
+[21:34:44.477] |T| [shader::usse::USSERecompiler::compile_code_node]: Compiling code_0, size = 2
+[21:34:44.477] |T| [shader::usse::USSETranslatorVisitor::phas]: 	fa44070000000000: PHAS
+[21:34:44.477] |T| [shader::usse::USSETranslatorVisitor::vmov]: 	38800422c5000000: VMOV.f16 pa0.xyzw sa0.xyzw 
+[21:34:44.479] |I| [renderer::load_shader_generic]: Generating vert shader 9dda8a3b77baa4dc9f573eb74faa2f014d9e746cec719faf7c905732dc117710
+[21:34:44.479] |D| [shader::create_parameters]: [BUFFER0  + 0] pa0 = (float4) aPosition
+[21:34:44.479] |T| [shader::usse::USSERecompiler::compile_code_node]: Compiling code_0, size = 6
+[21:34:44.480] |T| [shader::usse::USSETranslatorVisitor::phas]: 	fa44070000000000: PHAS
+[21:34:44.480] |T| [shader::usse::USSETranslatorVisitor::nop]: 	f800094000000000: NOP
+[21:34:44.480] |T| [shader::usse::USSETranslatorVisitor::v32nmad]: 	08c51f889f240001: VMUL i0.xyzw pa0.xy11 c1.yyyy
+[21:34:44.480] |T| [shader::usse::USSETranslatorVisitor::vmov]: 	3880052103000f00: VMOV.f32 o0.xy i0.xy 
+[21:34:44.480] |T| [shader::usse::USSETranslatorVisitor::vmov]: 	3880055903040f00: VMOV.f32 o2.xy i0.zw 
+[21:34:44.480] |T| [shader::usse::USSETranslatorVisitor::spec]: 	fb275000a0200000: SPEC category: 2, special: false
+[21:34:44.482] |E| [renderer::gl::compile_program]: Fragment info
+-------------
+0(30) : warning C7050: "pa[0].zw" might be used before being initialized
+
+
+[21:34:44.495] |I| [renderer::load_shader_generic]: Generating frag shader c967b3d1c2ebda34628eda8fd007bb107ec454c5a72a0a5061afc4f680c7d1f6
+[21:34:44.496] |D| [shader::create_parameters]: [DEFAULT  + 0] sa0 = (float4) uTintColor
+[21:34:44.496] |T| [shader::create_fragment_inputs]: pa0 = tex2D<float4>(tex, TEXCOORD0.xy)
+[21:34:44.496] |T| [shader::usse::USSERecompiler::compile_code_node]: Compiling code_0, size = 5
+[21:34:44.496] |T| [shader::usse::USSETranslatorVisitor::phas]: 	fa44070000000000: PHAS
+[21:34:44.496] |T| [shader::usse::USSETranslatorVisitor::nop]: 	f800094000000000: NOP
+[21:34:44.496] |T| [shader::usse::USSETranslatorVisitor::vpck]: 	40c00dbcaf998002: VPCKF32F32 i0.xyzw (pa0.xyzw pa2.xyzw) [noscale]
+[21:34:44.496] |T| [shader::usse::USSETranslatorVisitor::v32nmad]: 	08a44784cf04003c: VMUL i0.xyzw sa0.xyzw i0.xyzw
+[21:34:44.496] |T| [shader::usse::USSETranslatorVisitor::vpck]: 	40810d7e2019bc00: VPCKF16F32 pa0.xyzw i0.xyzw [noscale]
+[21:34:44.498] |I| [renderer::load_shader_generic]: Generating vert shader ce748efe5db5316c3f3787c1b3b6c45b3898894a60fc7f1bddaade3b9e3b5194
+[21:34:44.498] |D| [shader::create_parameters]: [BUFFER0  + 0] pa0 = (float4) aPosition
+[21:34:44.499] |D| [shader::create_parameters]: [BUFFER0  + 4] pa4 = (float4) aTexcoord
+[21:34:44.499] |D| [shader::create_parameters]: [DEFAULT  + 0] sa0 = (float4) wvp[4]
+[21:34:44.499] |T| [shader::usse::USSERecompiler::compile_code_node]: Compiling code_0, size = 9
+[21:34:44.499] |T| [shader::usse::USSETranslatorVisitor::phas]: 	fa44070000000000: PHAS
+[21:34:44.499] |T| [shader::usse::USSETranslatorVisitor::vmov]: 	38800d2183080080: VMOV.f32 o4.xy pa4.xy 
+[21:34:44.499] |T| [shader::usse::USSETranslatorVisitor::vpck]: 	40c00d9caf818002: VPCKF32F32 i0.xyz (pa0.xyz pa2.xyzw) [noscale]
+[21:34:44.499] |T| [shader::usse::USSETranslatorVisitor::vpck]: 	40c00dbcffb9860e: VPCKF32F32 i1.xyzw (sa12.xyzw sa14.xyzw) [noscale]
+[21:34:44.499] |T| [shader::usse::USSETranslatorVisitor::vmad]: 	18b18f80cf411100: VMAD i1.xyzw i0.xxxx sa0.xyzw i1.xyzw
+[21:34:44.500] |T| [shader::usse::USSETranslatorVisitor::vmad]: 	18b18f80cf451102: VMAD i1.xyzw i0.yyyy sa4.xyzw i1.xyzw
+[21:34:44.500] |T| [shader::usse::USSETranslatorVisitor::vmad]: 	18b18181c0091104: VMAD o0.xy i0.zz sa8.xy i1.xy
+[21:34:44.501] |T| [shader::usse::USSETranslatorVisitor::vmad]: 	18b18181c04ad105: VMAD o2.xy i0.zz sa10.xy i1.zw
+[21:34:44.501] |T| [shader::usse::USSETranslatorVisitor::spec]: 	fb275000a0200000: SPEC category: 2, special: false
+[21:34:44.503] |E| [renderer::gl::compile_program]: Vertex info
+-----------
+0(33) : warning C7050: "internals[0].w" might be used before being initialized
+
+
+[21:34:44.517] |I| [renderer::load_shader_generic]: Generating frag shader fdb49c863e7fcfba08a54467695d14285159bae9fd219f83cc37524b5932aaed
+[21:34:44.517] |T| [shader::create_fragment_inputs]: pa0 = tex2D<half4>(tex, TEXCOORD0.xy)
+[21:34:44.518] |T| [shader::usse::USSERecompiler::compile_code_node]: Compiling code_0, size = 1
+[21:34:44.518] |T| [shader::usse::USSETranslatorVisitor::phas]: 	fa44070000000000: PHAS
+[21:34:44.519] |E| [renderer::gl::compile_program]: Vertex info
+-----------
+0(33) : warning C7050: "internals[0].w" might be used before being initialized
+
+
+[21:34:48.820] |I| [export_sceIoOpen]: Opening file: app0:resources/font.otf
+[21:34:48.820] |T| [open_file]: sceIoOpen: Opening file app0:resources/font.otf (ux0:/app/PLYMARS01/resources/font.otf), fd: 0x16
+[21:34:48.866] |I| [renderer::load_shader_generic]: Generating frag shader 925d1eff277a4bf2eb0694d316973907c5f5f8cfc5bb3364e3706cb921203f88
+[21:34:48.866] |D| [shader::create_fragment_inputs]: Iterator: pa0 = (float4) v_Color0
+[21:34:48.867] |T| [shader::usse::USSERecompiler::compile_code_node]: Compiling code_0, size = 2
+[21:34:48.867] |T| [shader::usse::USSETranslatorVisitor::phas]: 	fa44070000000000: PHAS
+[21:34:48.867] |T| [shader::usse::USSETranslatorVisitor::vpck]: 	40800d7ea0198002: VPCKF16F32 pa0.xyzw (pa0.xyzw pa2.xyzw) [noscale]
+[21:34:48.868] |I| [renderer::load_shader_generic]: Generating vert shader 9566374be231bca9b76e9f59e6b8f5ab3cd8ed6401304a9182f25e835e256024
+[21:34:48.869] |D| [shader::create_parameters]: [BUFFER0  + 0] pa0 = (float4) aPosition
+[21:34:48.869] |D| [shader::create_parameters]: [BUFFER0  + 4] pa4 = (float4) aColor
+[21:34:48.869] |D| [shader::create_parameters]: [DEFAULT  + 0] sa0 = (float4) wvp[4]
+[21:34:48.869] |T| [shader::usse::USSERecompiler::compile_code_node]: Compiling code_0, size = 9
+[21:34:48.869] |T| [shader::usse::USSETranslatorVisitor::phas]: 	fa44070000000000: PHAS
+[21:34:48.869] |T| [shader::usse::USSETranslatorVisitor::vmov]: 	38801d2183080080: VMOV.f32 o4.xy pa4.xy 
+[21:34:48.870] |T| [shader::usse::USSETranslatorVisitor::vmov]: 	38801d2183080080: VMOV.f32 o6.xy pa6.xy 
+[21:34:48.870] |T| [shader::usse::USSETranslatorVisitor::vpck]: 	40c00d9caf818002: VPCKF32F32 i0.xyz (pa0.xyz pa2.xyzw) [noscale]
+[21:34:48.870] |T| [shader::usse::USSETranslatorVisitor::vpck]: 	40c00dbcffb9860e: VPCKF32F32 i1.xyzw (sa12.xyzw sa14.xyzw) [noscale]
+[21:34:48.872] |T| [shader::usse::USSETranslatorVisitor::vmad]: 	18b18f80cf411100: VMAD i1.xyzw i0.xxxx sa0.xyzw i1.xyzw
+[21:34:48.873] |T| [shader::usse::USSETranslatorVisitor::vmad]: 	18b18f80cf451102: VMAD i1.xyzw i0.yyyy sa4.xyzw i1.xyzw
+[21:34:48.873] |T| [shader::usse::USSETranslatorVisitor::vmad]: 	18b18181c0091104: VMAD o0.xy i0.zz sa8.xy i1.xy
+[21:34:48.873] |T| [shader::usse::USSETranslatorVisitor::vmad]: 	18b18181c04ad105: VMAD o2.xy i0.zz sa10.xy i1.zw
+[21:34:48.873] |T| [shader::usse::USSETranslatorVisitor::spec]: 	fb275000a0200000: SPEC category: 2, special: false
+[21:34:48.875] |E| [renderer::gl::compile_program]: Vertex info
+-----------
+0(33) : warning C7050: "internals[0].w" might be used before being initialized
+
+
+[21:34:54.819] |I| [export_sceIoOpen]: Opening file: ux0:data/terri-fried.save
+[21:34:54.819] |T| [open_file]: sceIoOpen: Opening file ux0:data/terri-fried.save (ux0:/data/terri-fried.save), fd: 0x17
+[21:34:54.819] |T| [write_file]: sceIoWrite: Writing to fd: 0x17, size: 1
+[21:34:54.819] |T| [close_file]: sceIoClose: Closing file fd: 0x17
+[21:34:57.701] |I| [export_sceIoOpen]: Opening file: ux0:data/terri-fried.save
+[21:34:57.702] |T| [open_file]: sceIoOpen: Opening file ux0:data/terri-fried.save (ux0:/data/terri-fried.save), fd: 0x18
+[21:34:57.702] |T| [write_file]: sceIoWrite: Writing to fd: 0x18, size: 1
+[21:34:57.702] |T| [close_file]: sceIoClose: Closing file fd: 0x18
+[21:35:03.552] |I| [export_sceIoOpen]: Opening file: ux0:data/terri-fried.save
+[21:35:03.552] |T| [open_file]: sceIoOpen: Opening file ux0:data/terri-fried.save (ux0:/data/terri-fried.save), fd: 0x19
+[21:35:03.553] |T| [write_file]: sceIoWrite: Writing to fd: 0x19, size: 1
+[21:35:03.553] |T| [close_file]: sceIoClose: Closing file fd: 0x19
