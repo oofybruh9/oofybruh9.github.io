@@ -8,11 +8,9 @@
        {% include header.html %}
       <div class="div_article" id="div_atcl">
         <div class="hook" id="top_hook"></div>
-        <article
-          id="main_atcl"
-          itemscope
-          itemtype="http://schema.org/BlogPosting"
-        >
+        <article id="main_atcl" itemscope itemtype="http://schema.org/BlogPosting">
+          <div id="keepandroidopenpls"></div>
+          <script src="https://keepandroidopen.org/banner.js?size=mini&id=keepandroidopenpls"></script>
           {{content}} {% include post_list.html %} {% include comment.html %}
         </article>
         {% if page.footer != false %} {% include footer.html %} {% endif %}
