@@ -9,8 +9,16 @@
       <div class="div_article" id="div_atcl">
         <div class="hook" id="top_hook"></div>
         <article id="main_atcl" itemscope itemtype="http://schema.org/BlogPosting">
-          <div id="keepandroidopenpls"></div>
-          <script src="https://keepandroidopen.org/banner.js?size=mini&id=keepandroidopenpls"></script>
+          <div id="banner">
+            <details>
+              <summary>FUCK GOOGLE</summary>
+              <h5>We, the buyers, have been promised by Google that Android was an open platform where you could do anything. Now <a href="//developer.android.com/developer-verification">Google is taking away that freedom</a> by adding developer verification to make Android "a more secure platform", effictively killing F-Droid, Aurora Store, and our freedom.</h5>
+              <h6>learn more at <a href="//keepandroidopen.org">KeepAndroidOpen.org</a></h6>
+            </details>
+            <div id="keepandroidopenpls"></div>
+            <script src="https://keepandroidopen.org/banner.js?size=mini&id=keepandroidopenpls&hidebutton=off"></script>
+            <p><small>this banner will not disapppear untill Google does something to fix this shit</small></p>
+          </div>
           {{content}} {% include post_list.html %} {% include comment.html %}
         </article>
         {% if page.footer != false %} {% include footer.html %} {% endif %}
